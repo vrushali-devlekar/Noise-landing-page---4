@@ -10,7 +10,7 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 main {
   width: 100%;
@@ -231,6 +231,9 @@ main {
 }
 
 @media (max-width: 500px) {
+  #bone {
+    margin-top: 10px;
+  }
   #overlay #text {
     flex-direction: column;
     align-items: flex-start;
