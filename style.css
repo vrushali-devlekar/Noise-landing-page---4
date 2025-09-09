@@ -232,7 +232,7 @@ main {
 
 @media (max-width: 500px) {
   #bone {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   #overlay #text {
     flex-direction: column;
@@ -240,6 +240,10 @@ main {
   }
   #text h1 {
     font-size: 10vw;
+  }
+  #textright .para {
+    width: initial;
+    font-size: 12px;
   }
   #overlay #text #textright {
     align-items: flex-start;
