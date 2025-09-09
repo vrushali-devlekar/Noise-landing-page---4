@@ -102,12 +102,7 @@ main {
   font-size: 12px;
   margin-top: 20px;
 }
-#bone:hover {
-  /* transform: scale(1.09); */
-  color: white;
-  background-color: #212121;
-  transition: transform 0.3s, color 0.3s;
-}
+
 #btwo {
   width: 25%;
   min-height: inherit;
@@ -138,6 +133,12 @@ main {
 #bthreetop p {
   font-size: 12px;
   margin-top: 10px;
+}
+#bone:hover {
+  /* transform: scale(1.09); */
+  color: white;
+  background-color: #212121;
+  transition: color 0.3s;
 }
 #bthreebottom {
   width: 100%;
@@ -231,9 +232,6 @@ main {
 }
 
 @media (max-width: 500px) {
-  #bone {
-    margin-top: 20px;
-  }
   #overlay #text {
     flex-direction: column;
     align-items: flex-start;
@@ -242,8 +240,8 @@ main {
     font-size: 10vw;
   }
   #textright .para {
-    width: initial;
-    font-size: 12px;
+    width: 100%;
+    /* font-size: 12px; */
   }
   #overlay #text #textright {
     align-items: flex-start;
@@ -258,7 +256,7 @@ main {
   }
   #bottom {
     flex-direction: column;
-    min-height: 20vh;
+    min-height: 22vh;
   }
   #bone,
   #btwo,
