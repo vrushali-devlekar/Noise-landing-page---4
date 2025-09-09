@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TikTok Sans", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+#top {
+  width: 100%;
+  min-height: 50vh;
+  /* background-color: aquamarine; */
+  background-image: url(https://images.unsplash.com/photo-1700422300144-713dad3a1c4a?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  /* background-position: 50% 50%; */
+  background-position: top;
+}
+#overlay {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+#text {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 20%;
+  width: 100%;
+  padding: 0 7vw;
+  /* background-color: red; */
+  color: white;
+}
+#text h1 {
+  font-weight: 400;
+  font-size: 6vw;
+}
+.typing {
+  display: inline-block;
+  border-right: 3px solid #fff; /* cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(5, end) forwards, blink 0.7s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 5ch;
+  } /* "Noise" has 5 letters */
+}
+
+/* blinking cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* remove cursor after typing is done */
+.typing.done {
+  border-right: none;
+}
+
+#textright {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#textright .para {
+  width: 40%;
+  font-size: 12px;
+}
+#bottom {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  background-color: #212121;
+}
+#bone {
+  width: 25%;
+  min-height: inherit;
+  background-color: white;
+  padding: 30px;
+}
+#bone p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+#bone:hover {
+  /* transform: scale(1.09); */
+  color: white;
+  background-color: #212121;
+  transition: transform 0.3s, color 0.3s;
+}
+#btwo {
+  width: 25%;
+  min-height: inherit;
+  /* background-color: pink; */
+  /* background-image: url(https://images.unsplash.com/photo-1579269896398-4deb6cbdc320?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lbiUyMGluJTIwcmVkJTIwaG9vZGllJTIwYmFja3NpZGUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D); */
+  /* background-image: url(https://i.pinimg.com/1200x/cc/02/80/cc028070b6b5b0105bb4e9b9de616766.jpg); */
+  /* background-image: url(https://i.pinimg.com/736x/ce/c5/e3/cec5e31435cfc54822ef39e6b7dd636b.jpg); */
+  background-image: url(https://i.pinimg.com/1200x/3f/e2/66/3fe266d1759dd4bd138728eceb3c0a3e.jpg);
+  background-size: cover;
+  background-position: 20% 30%;
+}
+#btwo:hover {
+  background-color: rgba(0, 0, 0, 0.338);
+  background-blend-mode: darken;
+  transition: transform 0.3s, color 0.3s;
+}
+#bthree {
+  width: 20%;
+  min-height: inherit;
+}
+#bthreetop {
+  width: 100%;
+  min-height: 25vh;
+  background-color: orangered;
+  color: white;
+  padding: 20px;
+}
+#bthreetop p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+#bthreebottom {
+  width: 100%;
+  min-height: 25vh;
+  background-image: url(https://images.unsplash.com/photo-1541275055241-329bbdf9a191?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#bfour {
+  width: 30%;
+  min-height: inherit;
+  background-color: #212121;
+  color: white;
+  padding: 30px;
+}
+
+.not {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.not .photo1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  margin-right: 5px;
+}
+.not .photo2 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  margin-right: 5px;
+}
+.not p {
+  width: 86%;
+  font-size: 12px;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#text h1 {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+#textright {
+  animation: fadeUp 1.2s ease-out forwards;
+}
+#overlay {
+  animation: fadeBg 2s ease-in-out forwards;
+}
+
+@keyframes fadeBg {
+  from {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+#icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#icons .insta:hover {
+  transform: scale(1.3);
+  color: #ff4d4d;
+}
+#icons .twit:hover {
+  transform: scale(1.3);
+  color: black;
+}
+#icons .fb:hover {
+  transform: scale(1.3);
+  color: #087aea;
+}
+
+@media (max-width: 500px) {
+  #overlay #text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #text h1 {
+    font-size: 10vw;
+  }
+  #overlay #text #textright {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #overlay #text #textright p {
+    width: initial;
+    margin-top: 20px;
+  }
+  #overlay #text #textright #icons {
+    margin-top: 30px;
+  }
+  #bottom {
+    flex-direction: column;
+    min-height: 20vh;
+  }
+  #bone,
+  #btwo,
+  #bthree,
+  #bfour {
+    width: 100%;
+    min-height: 40vh;
+  }
+
+  #bthree {
+    flex-direction: column;
+  }
+}

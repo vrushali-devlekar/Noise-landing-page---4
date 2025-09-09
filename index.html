@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="top">
+        <div id="overlay">
+          <div id="text">
+            <h1><span class="typing">Noise</span></h1>
+            <div id="textright">
+              <div class="para">
+                <h5>About Us</h5>
+                <p>
+                  We create modern digital experiences that connect brands with
+                  people and bring ideas to life.
+                </p>
+              </div>
+              <div class="para">
+                <h5>Our Mission</h5>
+                <p>
+                  To deliver innovative solutions with creativity, passion, and
+                  impact across design and technology.
+                </p>
+              </div>
+              <div id="icons">
+                <i class="ri-instagram-fill insta"></i>
+                <i class="ri-twitter-x-fill twit"></i>
+                <i class="ri-facebook-circle-fill fb"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom">
+        <div id="bone">
+          <h3>Latest News</h3>
+          <p>
+            New product launch coming this month! Stay tuned for updates and
+            exclusive early access.
+          </p>
+        </div>
+
+        <div id="btwo"></div>
+
+        <div id="bthree">
+          <div id="bthreetop">
+            <h4>Alerts</h4>
+            <p>
+              Scheduled maintenance on September 15th, 2025. Some features may
+              be temporarily unavailable.
+            </p>
+          </div>
+          <div id="bthreebottom"></div>
+        </div>
+
+        <div id="bfour">
+          <h3>Latest</h3>
+          <div class="not">
+            <div class="photo1">
+              <img src="img1.jpeg" alt="" />
+            </div>
+            <div class="para">
+              <h5>New Feature</h5>
+              <p>
+                Dark mode is now available across all devices for a better user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="not">
+            <div class="photo2">
+              <img src="img2.jpeg" alt="" />
+            </div>
+            <div class="para">
+              <h5>Community Update</h5>
+              <p>
+                Join our live webinar this Friday to explore upcoming trends in
+                design and technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const typing = document.querySelector(".typing");
+        setTimeout(() => {
+          typing.classList.add("done");
+        }, 2200); // slightly longer than typing duration (2s)
+      });
+    </script>
+  </body>
+</html>
